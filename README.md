@@ -1,1 +1,1 @@
-# Demo of using TRAVIS CI
+# Demo of TRAVIS CI usage
