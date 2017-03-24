@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="maven-antrun-" default="main"  >
+<target name="main">
+  <concat destfile="/Users/nishita.kheur/RALLY/projects/ingestadapter-breakpoint-csv/target/pl-cs-comcast-csv-ingest-generated-noimports.groovy" outputencoding="UTF-8">
+    <filelist files="ComcastScriptEntryPoint.groovy" dir="/Users/nishita.kheur/RALLY/projects/ingestadapter-breakpoint-csv/src/main/groovy/com/theplatform/cs/comcast/ingest/script"/>
+    <fileset excludes="**/script/ComcastScriptEntryPoint.groovy" includes="**/*.groovy" dir="/Users/nishita.kheur/RALLY/projects/ingestadapter-breakpoint-csv/src/main/groovy/com/theplatform/cs/comcast/ingest"/>
+    <filterchain>
+      <linecontainsregexp negate="true">
+        <regexp pattern="package.*"/>
+      </linecontainsregexp>
+      <linecontainsregexp negate="true">
+        <regexp pattern="import.*"/>
+      </linecontainsregexp>
+    </filterchain>
+  </concat>
+  <concat destfile="/Users/nishita.kheur/RALLY/projects/ingestadapter-breakpoint-csv/target/pl-cs-comcast-csv-ingest-generated-imports.groovy" outputencoding="UTF-8">
+    <filelist files="ComcastScriptEntryPoint.groovy" dir="/Users/nishita.kheur/RALLY/projects/ingestadapter-breakpoint-csv/src/main/groovy/com/theplatform/cs/comcast/ingest/script"/>
+    <fileset excludes="**/script/ComcastScriptEntryPoint.groovy" includes="**/*.groovy" dir="/Users/nishita.kheur/RALLY/projects/ingestadapter-breakpoint-csv/src/main/groovy/com/theplatform/cs/comcast/ingest"/>
+    <filterchain>
+      <tokenfilter delimoutput="\n">
+        <containsregex pattern="^\s*import.*"/>
+      </tokenfilter>
+      <linecontains negate="true">
+        <contains value="import com.theplatform.cs.comcast.ingest.script.ComcastIngestScriptClass"/>
+      </linecontains>
+      <linecontainsregexp negate="true">
+        <regexp pattern="import.*com.theplatform.cs.comcast.ingest.*"/>
+      </linecontainsregexp>
+      <sortfilter/>
+      <uniqfilter/>
+    </filterchain>
+  </concat>
+  <concat destfile="/Users/nishita.kheur/RALLY/projects/ingestadapter-breakpoint-csv/target/pl-cs-comcast-csv-ingest-generated.groovy" outputencoding="UTF-8" fixlastline="true">
+    <filelist files="pl-cs-comcast-csv-ingest-generated-imports.groovy,pl-cs-comcast-csv-ingest-generated-noimports.groovy" dir="/Users/nishita.kheur/RALLY/projects/ingestadapter-breakpoint-csv/target"/>
+    <header trimleading="yes">__COMMENT__ =====================================================================
+                                        __COMMENT__ start script: pl-cs-comcast-csv-ingest
+                                        __COMMENT__ =====================================================================
+
+                                        __COMMENT__ Build Revision = Not an automated build.
+                                        __COMMENT__ Version = 1.0-SNAPSHOT
+                                        __COMMENT__ Build Date = 2017-03-14 16:26:13
+                                        __COMMENT__ Build Type = Local
+                                        __COMMENT__ User = nishita.kheur</header>
+    <footer trimleading="yes">__COMMENT__ =====================================================================
+                                        __COMMENT__ end script: pl-cs-comcast-csv-ingest
+                                        __COMMENT__ =====================================================================</footer>
+    <filterchain>
+      <tokenfilter>
+        <filetokenizer/>
+        <replaceregex pattern="\s*//.*|(&quot;(?:\\[^&quot;]|&quot;|.)*?&quot;|&apos;(?:\\[^&apos;]|&apos;|.)*?&apos;)|(?s)/\*.*?\*/" replace="\1" flags="gm"/>
+      </tokenfilter>
+      <tokenfilter>
+        <replacestring from="__COMMENT__" to="//"/>
+        <replacestring from="__FILE_INFO__" to="$File$"/>
+      </tokenfilter>
+    </filterchain>
+  </concat>
+  <chmod file="/Users/nishita.kheur/RALLY/projects/ingestadapter-breakpoint-csv/generated/pl-cs-comcast-csv-ingest-generated.groovy" perm="666"/>
+  <copy file="/Users/nishita.kheur/RALLY/projects/ingestadapter-breakpoint-csv/target/pl-cs-comcast-csv-ingest-generated.groovy" tofile="/Users/nishita.kheur/RALLY/projects/ingestadapter-breakpoint-csv/generated/pl-cs-comcast-csv-ingest-generated.groovy"/>
+</target>
+</project>

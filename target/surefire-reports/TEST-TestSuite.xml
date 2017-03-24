@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="53" failures="0" name="TestSuite" time="1.93" errors="0" skipped="0">
+  <properties>
+    <property name="idea.version" value="14.1.4"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib"/>
+    <property name="java.vm.version" value="25.51-b03"/>
+    <property name="gopherProxySet" value="false"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="idea.launcher.port" value="7535"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/Users/nishita.kheur/RALLY/projects/ingestadapter-breakpoint-csv"/>
+    <property name="java.runtime.version" value="1.8.0_51-b16"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/endorsed"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.io.tmpdir" value="/var/folders/nk/9gg6n3_n7v5_87gs6mvbk_trp95xwt/T/"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="classworlds.conf" value="/Users/nishita.kheur/Perforce/support_lt-nkheu-mac_8893/depot/thePlatform/tools/apache-maven/apache-maven-3.2.1/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/nishita.kheur/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.10.4"/>
+    <property name="user.home" value="/Users/nishita.kheur"/>
+    <property name="user.timezone" value="America/Los_Angeles"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="idea.launcher.bin.path" value="/Applications/IntelliJ IDEA 14.app/Contents/bin"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="nishita.kheur"/>
+    <property name="java.class.path" value="/Users/nishita.kheur/Perforce/support_lt-nkheu-mac_8893/depot/thePlatform/tools/apache-maven/apache-maven-3.2.1/boot/plexus-classworlds-2.5.1.jar:/Applications/IntelliJ IDEA 14.app/Contents/lib/idea_rt.jar"/>
+    <property name="org.slf4j.simpleLogger.defaultLogLevel" value="info"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre"/>
+    <property name="sun.java.command" value="com.intellij.rt.execution.application.AppMain org.codehaus.classworlds.Launcher -Didea.version=14.1.4 -s /Users/nishita.kheur/Perforce/support_lt-nkheu-mac_8893/depot/thePlatform/tools/apache-maven/settings.xml test"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_51"/>
+    <property name="java.ext.dirs" value="/Users/nishita.kheur/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
+    <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/Users/nishita.kheur/Perforce/support_lt-nkheu-mac_8893/depot/thePlatform/tools/apache-maven/apache-maven-3.2.1"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase classname="com.theplatform.cs.comcast.ingest.field.AdFieldInfoTest" name="testFieldInfo" time="0.031"/>
+  <testcase classname="com.theplatform.cs.comcast.ingest.field.AdFieldInfoTest" name="testNamespace" time="0"/>
+  <testcase classname="com.theplatform.cs.comcast.ingest.AssetSpliceRecordTest" name="testAssetSpliceRecordCreation" time="0.197"/>
+  <testcase classname="com.theplatform.cs.comcast.ingest.AssetSpliceRecordTest" name="testAssetSpliceRecordCreationManualPopulation" time="0.019"/>
+  <testcase classname="com.theplatform.cs.comcast.ingest.AssetSpliceRecordTest" name="testAssetSpliceRecordCreation_EmptyDataRecord" time="0.007"/>
+  <testcase classname="com.theplatform.cs.comcast.ingest.AssetSpliceRecordTest" name="testAssetSpliceRecordCreation_LocalMidRollEndIsNull" time="0.019"/>
+  <testcase classname="com.theplatform.cs.comcast.ingest.AssetSpliceRecordTest" name="testAssetSpliceRecordCreation_MissingRecords" time="0.005"/>
+  <testcase classname="com.theplatform.cs.comcast.ingest.AssetSpliceRecordTest" name="testAssetSpliceRecordCreation_NoHeader" time="0.007"/>
+  <testcase classname="com.theplatform.cs.comcast.ingest.AssetSpliceRecordTest" name="testAssetSpliceRecordCreation_SpliceRangesNullCompoundString" time="0.002"/>
+  <testcase classname="com.theplatform.cs.comcast.ingest.AssetSpliceRecordTest" name="testAssetSpliceRecordCreation_SpliceRangesNullDelimiter" time="0"/>
+  <testcase classname="com.theplatform.cs.comcast.ingest.AssetSpliceRecordTest" name="testAssetSpliceRecordCreation_TimesOutOfOrder" time="0.011"/>
+  <testcase classname="com.theplatform.cs.comcast.ingest.AssetSpliceRecordTest" name="testAssetSpliceRecordCreation_WithNationalConditioning" time="0.014"/>
+  <testcase classname="com.theplatform.cs.comcast.ingest.AssetSpliceRecordTest" name="testAssetSpliceRecordCreation_WithWhiteSpace" time="0.007"/>
+  <testcase classname="com.theplatform.cs.comcast.ingest.AssetSpliceRecordTest" name="testAssetSpliceRecordCreation_csvNullHeaderArgument" time="0.001"/>
+  <testcase classname="com.theplatform.cs.comcast.ingest.AssetSpliceRecordTest" name="testAssetSpliceRecordCreation_csvNullItemArgument" time="0"/>
+  <testcase classname="com.theplatform.cs.comcast.ingest.AssetSpliceRecordTest" name="testAssetSpliceRecordCreation_withLocal" time="0.007"/>
+  <testcase classname="com.theplatform.cs.comcast.ingest.AssetSpliceRecordTest" name="testAssetSpliceRecordDeriveChapters" time="0.019"/>
+  <testcase classname="com.theplatform.cs.comcast.ingest.AssetSpliceRecordTest" name="testAssetSpliceRecordDeriveChapters_NoMidRolls" time="0.004"/>
+  <testcase classname="com.theplatform.cs.comcast.ingest.AssetSpliceRecordTest" name="testAssetSpliceRecordDeriveChapters_OnlyLeadBlack" time="0.004"/>
+  <testcase classname="com.theplatform.cs.comcast.ingest.AssetSpliceRecordTest" name="testAssetSpliceRecordDeriveChapters_OnlyOneBadBoyInTheMiddle" time="0.006"/>
+  <testcase classname="com.theplatform.cs.comcast.ingest.AssetSpliceRecordTest" name="testAssetSpliceRecordDeriveChapters_OnlyPreRoll" time="0.006"/>
+  <testcase classname="com.theplatform.cs.comcast.ingest.AssetSpliceRecordTest" name="testAssetSpliceRecordDeriveChapters_PaidHasLowerCase" time="0.005"/>
+  <testcase classname="com.theplatform.cs.comcast.ingest.AssetSpliceRecordTest" name="testAssetSpliceRecord_SpliceRangesCreationWithDefaultDelimiter" time="0"/>
+  <testcase classname="com.theplatform.cs.comcast.ingest.AssetSpliceRecordTest" name="testAssetSpliceRecord_SpliceRangesCreationWithSpecifiedDelimiter" time="0"/>
+  <testcase classname="com.theplatform.cs.comcast.ingest.AssetSpliceRecordTest" name="testAssetSpliceRecord_ZeroChapter" time="0.004"/>
+  <testcase classname="com.theplatform.cs.comcast.ingest.field.BaseFieldInfoTest" name="testFieldInfo" time="0.006"/>
+  <testcase classname="com.theplatform.cs.comcast.ingest.field.BaseFieldInfoTest" name="testNamespace" time="0"/>
+  <testcase classname="com.theplatform.cs.comcast.ingest.script.ComcastIngestScriptClassTest" name="testRun" time="0.479"/>
+  <testcase classname="com.theplatform.cs.comcast.ingest.script.ConfigTest" name="testGetIngestSources_Dcf" time="0.003"/>
+  <testcase classname="com.theplatform.cs.comcast.ingest.CsvMetadataMapperTest" name="testBuildAssetRecords_NoDefinedMediaHelper" time="0.004"/>
+  <testcase classname="com.theplatform.cs.comcast.ingest.CsvMetadataMapperTest" name="testBuildAssetRecords_NoRecords" time="0.001"/>
+  <testcase classname="com.theplatform.cs.comcast.ingest.CsvMetadataMapperTest" name="testBuildAssetRecords_OnlyEmptyRecords" time="0.001"/>
+  <testcase classname="com.theplatform.cs.comcast.ingest.CsvMetadataMapperTest" name="testBuildAssetRecords_WithEmptyRecords" time="0.009"/>
+  <testcase classname="com.theplatform.cs.comcast.ingest.CsvMetadataMapperTest" name="testBuildAssetSpliceRecords" time="0.007"/>
+  <testcase classname="com.theplatform.cs.comcast.ingest.CsvMetadataMapperTest" name="testBuildFileAsset" time="0.002"/>
+  <testcase classname="com.theplatform.cs.comcast.ingest.CsvMetadataMapperTest" name="testBuildFileAsset_NoCsvDefined" time="0"/>
+  <testcase classname="com.theplatform.cs.comcast.ingest.CsvMetadataMapperTest" name="testComposeGuid_Cox" time="0"/>
+  <testcase classname="com.theplatform.cs.comcast.ingest.CsvMetadataMapperTest" name="testComposeGuid_NotCox" time="0.001"/>
+  <testcase classname="com.theplatform.cs.comcast.ingest.CsvMetadataMapperTest" name="testMapSpliceRecordsToIngestMedia" time="0.006"/>
+  <testcase classname="com.theplatform.cs.comcast.ingest.CsvMetadataMapperTest" name="testMapSpliceRecordsToIngestMedia_MDU" time="0.035"/>
+  <testcase classname="com.theplatform.cs.comcast.ingest.CsvMetadataMapperTest" name="testMapSpliceRecordsToIngestMedia_MDU_BreakPointsDupe" time="0.027"/>
+  <testcase classname="com.theplatform.cs.comcast.ingest.CsvMetadataMapperTest" name="testMapSpliceRecordsToIngestMedia_MDU_NullOutFields" time="0.014"/>
+  <testcase classname="com.theplatform.cs.comcast.ingest.CsvMetadataMapperTest" name="testMapSpliceRecordsToIngestMedia_WithWarnings" time="0.007"/>
+  <testcase classname="com.theplatform.cs.comcast.ingest.GeneratedScriptTest" name="formatOfTheGeneratedScriptIsValid" time="0.947"/>
+  <testcase classname="com.theplatform.cs.comcast.ingest.field.ReferenceDataFieldInfoTest" name="testFieldInfo" time="0.001"/>
+  <testcase classname="com.theplatform.cs.comcast.ingest.field.ReferenceDataFieldInfoTest" name="testNamespace" time="0.001"/>
+  <testcase classname="com.theplatform.cs.comcast.ingest.SpliceRangeTest" name="testSpliceRangeCreation" time="0.001"/>
+  <testcase classname="com.theplatform.cs.comcast.ingest.SpliceRangeTest" name="testSpliceRangeCreation_VeryLargeValue" time="0"/>
+  <testcase classname="com.theplatform.cs.comcast.ingest.SpliceRangeTest" name="testSpliceRangeCreation_WithGreaterThanMillisecondAccuracy" time="0.001"/>
+  <testcase classname="com.theplatform.cs.comcast.ingest.SpliceRangeTest" name="testSpliceRangeCreation_WithWhiteSpace" time="0.001"/>
+  <testcase classname="com.theplatform.cs.comcast.ingest.SpliceRangeTest" name="testSpliceRangeFormatValidation" time="0.001"/>
+  <testcase classname="com.theplatform.cs.comcast.ingest.SpliceRangeTest" name="testSpliceRangeToDuration" time="0"/>
+  <testcase classname="com.theplatform.cs.comcast.ingest.SpliceRangeTest" name="testSpliceRange_timesOutOfOrder" time="0"/>
+</testsuite>

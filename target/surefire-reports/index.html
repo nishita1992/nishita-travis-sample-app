@@ -1,0 +1,1366 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Command_line_suite">
+              <span class="suite-name border-passed">Command line suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Command_line_suite">
+                    <span>[unset file name]</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Command_line_suite">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Command_line_suite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Command_line_suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Command_line_suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Command_line_suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Command_line_suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">53 methods,   53 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Command_line_suite" class="hide-methods passed suite-Command_line_suite"> (hide)</a> <!-- hide-methods passed suite-Command_line_suite -->
+                      <a href="#" panel-name="suite-Command_line_suite" class="show-methods passed suite-Command_line_suite"> (show)</a> <!-- show-methods passed suite-Command_line_suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Command_line_suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.theplatform.cs.comcast.ingest.GeneratedScriptTest" hash-for-method="formatOfTheGeneratedScriptIsValid">formatOfTheGeneratedScriptIsValid</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.theplatform.cs.comcast.ingest.AssetSpliceRecordTest" hash-for-method="testAssetSpliceRecordCreation">testAssetSpliceRecordCreation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.theplatform.cs.comcast.ingest.AssetSpliceRecordTest" hash-for-method="testAssetSpliceRecordCreationManualPopulation">testAssetSpliceRecordCreationManualPopulation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.theplatform.cs.comcast.ingest.AssetSpliceRecordTest" hash-for-method="testAssetSpliceRecordCreation_EmptyDataRecord">testAssetSpliceRecordCreation_EmptyDataRecord</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.theplatform.cs.comcast.ingest.AssetSpliceRecordTest" hash-for-method="testAssetSpliceRecordCreation_LocalMidRollEndIsNull">testAssetSpliceRecordCreation_LocalMidRollEndIsNull</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.theplatform.cs.comcast.ingest.AssetSpliceRecordTest" hash-for-method="testAssetSpliceRecordCreation_MissingRecords">testAssetSpliceRecordCreation_MissingRecords</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.theplatform.cs.comcast.ingest.AssetSpliceRecordTest" hash-for-method="testAssetSpliceRecordCreation_NoHeader">testAssetSpliceRecordCreation_NoHeader</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.theplatform.cs.comcast.ingest.AssetSpliceRecordTest" hash-for-method="testAssetSpliceRecordCreation_SpliceRangesNullCompoundString">testAssetSpliceRecordCreation_SpliceRangesNullCompoundString</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.theplatform.cs.comcast.ingest.AssetSpliceRecordTest" hash-for-method="testAssetSpliceRecordCreation_SpliceRangesNullDelimiter">testAssetSpliceRecordCreation_SpliceRangesNullDelimiter</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.theplatform.cs.comcast.ingest.AssetSpliceRecordTest" hash-for-method="testAssetSpliceRecordCreation_TimesOutOfOrder">testAssetSpliceRecordCreation_TimesOutOfOrder</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.theplatform.cs.comcast.ingest.AssetSpliceRecordTest" hash-for-method="testAssetSpliceRecordCreation_WithNationalConditioning">testAssetSpliceRecordCreation_WithNationalConditioning</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.theplatform.cs.comcast.ingest.AssetSpliceRecordTest" hash-for-method="testAssetSpliceRecordCreation_WithWhiteSpace">testAssetSpliceRecordCreation_WithWhiteSpace</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.theplatform.cs.comcast.ingest.AssetSpliceRecordTest" hash-for-method="testAssetSpliceRecordCreation_csvNullHeaderArgument">testAssetSpliceRecordCreation_csvNullHeaderArgument</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.theplatform.cs.comcast.ingest.AssetSpliceRecordTest" hash-for-method="testAssetSpliceRecordCreation_csvNullItemArgument">testAssetSpliceRecordCreation_csvNullItemArgument</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.theplatform.cs.comcast.ingest.AssetSpliceRecordTest" hash-for-method="testAssetSpliceRecordCreation_withLocal">testAssetSpliceRecordCreation_withLocal</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.theplatform.cs.comcast.ingest.AssetSpliceRecordTest" hash-for-method="testAssetSpliceRecordDeriveChapters">testAssetSpliceRecordDeriveChapters</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.theplatform.cs.comcast.ingest.AssetSpliceRecordTest" hash-for-method="testAssetSpliceRecordDeriveChapters_NoMidRolls">testAssetSpliceRecordDeriveChapters_NoMidRolls</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.theplatform.cs.comcast.ingest.AssetSpliceRecordTest" hash-for-method="testAssetSpliceRecordDeriveChapters_OnlyLeadBlack">testAssetSpliceRecordDeriveChapters_OnlyLeadBlack</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.theplatform.cs.comcast.ingest.AssetSpliceRecordTest" hash-for-method="testAssetSpliceRecordDeriveChapters_OnlyOneBadBoyInTheMiddle">testAssetSpliceRecordDeriveChapters_OnlyOneBadBoyInTheMiddle</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.theplatform.cs.comcast.ingest.AssetSpliceRecordTest" hash-for-method="testAssetSpliceRecordDeriveChapters_OnlyPreRoll">testAssetSpliceRecordDeriveChapters_OnlyPreRoll</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.theplatform.cs.comcast.ingest.AssetSpliceRecordTest" hash-for-method="testAssetSpliceRecordDeriveChapters_PaidHasLowerCase">testAssetSpliceRecordDeriveChapters_PaidHasLowerCase</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.theplatform.cs.comcast.ingest.AssetSpliceRecordTest" hash-for-method="testAssetSpliceRecord_SpliceRangesCreationWithDefaultDelimiter">testAssetSpliceRecord_SpliceRangesCreationWithDefaultDelimiter</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.theplatform.cs.comcast.ingest.AssetSpliceRecordTest" hash-for-method="testAssetSpliceRecord_SpliceRangesCreationWithSpecifiedDelimiter">testAssetSpliceRecord_SpliceRangesCreationWithSpecifiedDelimiter</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.theplatform.cs.comcast.ingest.AssetSpliceRecordTest" hash-for-method="testAssetSpliceRecord_ZeroChapter">testAssetSpliceRecord_ZeroChapter</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.theplatform.cs.comcast.ingest.CsvMetadataMapperTest" hash-for-method="testBuildAssetRecords_NoDefinedMediaHelper">testBuildAssetRecords_NoDefinedMediaHelper</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.theplatform.cs.comcast.ingest.CsvMetadataMapperTest" hash-for-method="testBuildAssetRecords_NoRecords">testBuildAssetRecords_NoRecords</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.theplatform.cs.comcast.ingest.CsvMetadataMapperTest" hash-for-method="testBuildAssetRecords_OnlyEmptyRecords">testBuildAssetRecords_OnlyEmptyRecords</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.theplatform.cs.comcast.ingest.CsvMetadataMapperTest" hash-for-method="testBuildAssetRecords_WithEmptyRecords">testBuildAssetRecords_WithEmptyRecords</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.theplatform.cs.comcast.ingest.CsvMetadataMapperTest" hash-for-method="testBuildAssetSpliceRecords">testBuildAssetSpliceRecords</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.theplatform.cs.comcast.ingest.CsvMetadataMapperTest" hash-for-method="testBuildFileAsset">testBuildFileAsset</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.theplatform.cs.comcast.ingest.CsvMetadataMapperTest" hash-for-method="testBuildFileAsset_NoCsvDefined">testBuildFileAsset_NoCsvDefined</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.theplatform.cs.comcast.ingest.CsvMetadataMapperTest" hash-for-method="testComposeGuid_Cox">testComposeGuid_Cox</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.theplatform.cs.comcast.ingest.CsvMetadataMapperTest" hash-for-method="testComposeGuid_NotCox">testComposeGuid_NotCox</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.theplatform.cs.comcast.ingest.field.AdFieldInfoTest" hash-for-method="testFieldInfo">testFieldInfo</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.theplatform.cs.comcast.ingest.field.BaseFieldInfoTest" hash-for-method="testFieldInfo">testFieldInfo</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.theplatform.cs.comcast.ingest.field.ReferenceDataFieldInfoTest" hash-for-method="testFieldInfo">testFieldInfo</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.theplatform.cs.comcast.ingest.script.ConfigTest" hash-for-method="testGetIngestSources_Dcf">testGetIngestSources_Dcf</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.theplatform.cs.comcast.ingest.CsvMetadataMapperTest" hash-for-method="testMapSpliceRecordsToIngestMedia">testMapSpliceRecordsToIngestMedia</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.theplatform.cs.comcast.ingest.CsvMetadataMapperTest" hash-for-method="testMapSpliceRecordsToIngestMedia_MDU">testMapSpliceRecordsToIngestMedia_MDU</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.theplatform.cs.comcast.ingest.CsvMetadataMapperTest" hash-for-method="testMapSpliceRecordsToIngestMedia_MDU_BreakPointsDupe">testMapSpliceRecordsToIngestMedia_MDU_BreakPointsDupe</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.theplatform.cs.comcast.ingest.CsvMetadataMapperTest" hash-for-method="testMapSpliceRecordsToIngestMedia_MDU_NullOutFields">testMapSpliceRecordsToIngestMedia_MDU_NullOutFields</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.theplatform.cs.comcast.ingest.CsvMetadataMapperTest" hash-for-method="testMapSpliceRecordsToIngestMedia_WithWarnings">testMapSpliceRecordsToIngestMedia_WithWarnings</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.theplatform.cs.comcast.ingest.field.AdFieldInfoTest" hash-for-method="testNamespace">testNamespace</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.theplatform.cs.comcast.ingest.field.BaseFieldInfoTest" hash-for-method="testNamespace">testNamespace</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.theplatform.cs.comcast.ingest.field.ReferenceDataFieldInfoTest" hash-for-method="testNamespace">testNamespace</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.theplatform.cs.comcast.ingest.script.ComcastIngestScriptClassTest" hash-for-method="testRun">testRun</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.theplatform.cs.comcast.ingest.SpliceRangeTest" hash-for-method="testSpliceRangeCreation">testSpliceRangeCreation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.theplatform.cs.comcast.ingest.SpliceRangeTest" hash-for-method="testSpliceRangeCreation_VeryLargeValue">testSpliceRangeCreation_VeryLargeValue</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.theplatform.cs.comcast.ingest.SpliceRangeTest" hash-for-method="testSpliceRangeCreation_WithGreaterThanMillisecondAccuracy">testSpliceRangeCreation_WithGreaterThanMillisecondAccuracy</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.theplatform.cs.comcast.ingest.SpliceRangeTest" hash-for-method="testSpliceRangeCreation_WithWhiteSpace">testSpliceRangeCreation_WithWhiteSpace</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.theplatform.cs.comcast.ingest.SpliceRangeTest" hash-for-method="testSpliceRangeFormatValidation">testSpliceRangeFormatValidation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.theplatform.cs.comcast.ingest.SpliceRangeTest" hash-for-method="testSpliceRangeToDuration">testSpliceRangeToDuration</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.theplatform.cs.comcast.ingest.SpliceRangeTest" hash-for-method="testSpliceRange_timesOutOfOrder">testSpliceRange_timesOutOfOrder</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Command_line_suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Command_line_suite" class="panel Command_line_suite">
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.theplatform.cs.comcast.ingest.GeneratedScriptTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="formatOfTheGeneratedScriptIsValid">
+                  </a> <!-- formatOfTheGeneratedScriptIsValid -->
+                  <span class="method-name">formatOfTheGeneratedScriptIsValid</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.theplatform.cs.comcast.ingest.field.BaseFieldInfoTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testFieldInfo">
+                  </a> <!-- testFieldInfo -->
+                  <span class="method-name">testFieldInfo</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testNamespace">
+                  </a> <!-- testNamespace -->
+                  <span class="method-name">testNamespace</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.theplatform.cs.comcast.ingest.AssetSpliceRecordTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAssetSpliceRecordCreation">
+                  </a> <!-- testAssetSpliceRecordCreation -->
+                  <span class="method-name">testAssetSpliceRecordCreation</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAssetSpliceRecordCreationManualPopulation">
+                  </a> <!-- testAssetSpliceRecordCreationManualPopulation -->
+                  <span class="method-name">testAssetSpliceRecordCreationManualPopulation</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAssetSpliceRecordCreation_EmptyDataRecord">
+                  </a> <!-- testAssetSpliceRecordCreation_EmptyDataRecord -->
+                  <span class="method-name">testAssetSpliceRecordCreation_EmptyDataRecord</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAssetSpliceRecordCreation_LocalMidRollEndIsNull">
+                  </a> <!-- testAssetSpliceRecordCreation_LocalMidRollEndIsNull -->
+                  <span class="method-name">testAssetSpliceRecordCreation_LocalMidRollEndIsNull</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAssetSpliceRecordCreation_MissingRecords">
+                  </a> <!-- testAssetSpliceRecordCreation_MissingRecords -->
+                  <span class="method-name">testAssetSpliceRecordCreation_MissingRecords</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAssetSpliceRecordCreation_NoHeader">
+                  </a> <!-- testAssetSpliceRecordCreation_NoHeader -->
+                  <span class="method-name">testAssetSpliceRecordCreation_NoHeader</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAssetSpliceRecordCreation_SpliceRangesNullCompoundString">
+                  </a> <!-- testAssetSpliceRecordCreation_SpliceRangesNullCompoundString -->
+                  <span class="method-name">testAssetSpliceRecordCreation_SpliceRangesNullCompoundString</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAssetSpliceRecordCreation_SpliceRangesNullDelimiter">
+                  </a> <!-- testAssetSpliceRecordCreation_SpliceRangesNullDelimiter -->
+                  <span class="method-name">testAssetSpliceRecordCreation_SpliceRangesNullDelimiter</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAssetSpliceRecordCreation_TimesOutOfOrder">
+                  </a> <!-- testAssetSpliceRecordCreation_TimesOutOfOrder -->
+                  <span class="method-name">testAssetSpliceRecordCreation_TimesOutOfOrder</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAssetSpliceRecordCreation_WithNationalConditioning">
+                  </a> <!-- testAssetSpliceRecordCreation_WithNationalConditioning -->
+                  <span class="method-name">testAssetSpliceRecordCreation_WithNationalConditioning</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAssetSpliceRecordCreation_WithWhiteSpace">
+                  </a> <!-- testAssetSpliceRecordCreation_WithWhiteSpace -->
+                  <span class="method-name">testAssetSpliceRecordCreation_WithWhiteSpace</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAssetSpliceRecordCreation_csvNullHeaderArgument">
+                  </a> <!-- testAssetSpliceRecordCreation_csvNullHeaderArgument -->
+                  <span class="method-name">testAssetSpliceRecordCreation_csvNullHeaderArgument</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAssetSpliceRecordCreation_csvNullItemArgument">
+                  </a> <!-- testAssetSpliceRecordCreation_csvNullItemArgument -->
+                  <span class="method-name">testAssetSpliceRecordCreation_csvNullItemArgument</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAssetSpliceRecordCreation_withLocal">
+                  </a> <!-- testAssetSpliceRecordCreation_withLocal -->
+                  <span class="method-name">testAssetSpliceRecordCreation_withLocal</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAssetSpliceRecordDeriveChapters">
+                  </a> <!-- testAssetSpliceRecordDeriveChapters -->
+                  <span class="method-name">testAssetSpliceRecordDeriveChapters</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAssetSpliceRecordDeriveChapters_NoMidRolls">
+                  </a> <!-- testAssetSpliceRecordDeriveChapters_NoMidRolls -->
+                  <span class="method-name">testAssetSpliceRecordDeriveChapters_NoMidRolls</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAssetSpliceRecordDeriveChapters_OnlyLeadBlack">
+                  </a> <!-- testAssetSpliceRecordDeriveChapters_OnlyLeadBlack -->
+                  <span class="method-name">testAssetSpliceRecordDeriveChapters_OnlyLeadBlack</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAssetSpliceRecordDeriveChapters_OnlyOneBadBoyInTheMiddle">
+                  </a> <!-- testAssetSpliceRecordDeriveChapters_OnlyOneBadBoyInTheMiddle -->
+                  <span class="method-name">testAssetSpliceRecordDeriveChapters_OnlyOneBadBoyInTheMiddle</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAssetSpliceRecordDeriveChapters_OnlyPreRoll">
+                  </a> <!-- testAssetSpliceRecordDeriveChapters_OnlyPreRoll -->
+                  <span class="method-name">testAssetSpliceRecordDeriveChapters_OnlyPreRoll</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAssetSpliceRecordDeriveChapters_PaidHasLowerCase">
+                  </a> <!-- testAssetSpliceRecordDeriveChapters_PaidHasLowerCase -->
+                  <span class="method-name">testAssetSpliceRecordDeriveChapters_PaidHasLowerCase</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAssetSpliceRecord_SpliceRangesCreationWithDefaultDelimiter">
+                  </a> <!-- testAssetSpliceRecord_SpliceRangesCreationWithDefaultDelimiter -->
+                  <span class="method-name">testAssetSpliceRecord_SpliceRangesCreationWithDefaultDelimiter</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAssetSpliceRecord_SpliceRangesCreationWithSpecifiedDelimiter">
+                  </a> <!-- testAssetSpliceRecord_SpliceRangesCreationWithSpecifiedDelimiter -->
+                  <span class="method-name">testAssetSpliceRecord_SpliceRangesCreationWithSpecifiedDelimiter</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAssetSpliceRecord_ZeroChapter">
+                  </a> <!-- testAssetSpliceRecord_ZeroChapter -->
+                  <span class="method-name">testAssetSpliceRecord_ZeroChapter</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.theplatform.cs.comcast.ingest.script.ComcastIngestScriptClassTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testRun">
+                  </a> <!-- testRun -->
+                  <span class="method-name">testRun</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.theplatform.cs.comcast.ingest.SpliceRangeTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSpliceRangeCreation">
+                  </a> <!-- testSpliceRangeCreation -->
+                  <span class="method-name">testSpliceRangeCreation</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSpliceRangeCreation_VeryLargeValue">
+                  </a> <!-- testSpliceRangeCreation_VeryLargeValue -->
+                  <span class="method-name">testSpliceRangeCreation_VeryLargeValue</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSpliceRangeCreation_WithGreaterThanMillisecondAccuracy">
+                  </a> <!-- testSpliceRangeCreation_WithGreaterThanMillisecondAccuracy -->
+                  <span class="method-name">testSpliceRangeCreation_WithGreaterThanMillisecondAccuracy</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSpliceRangeCreation_WithWhiteSpace">
+                  </a> <!-- testSpliceRangeCreation_WithWhiteSpace -->
+                  <span class="method-name">testSpliceRangeCreation_WithWhiteSpace</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSpliceRangeFormatValidation">
+                  </a> <!-- testSpliceRangeFormatValidation -->
+                  <span class="method-name">testSpliceRangeFormatValidation</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSpliceRangeToDuration">
+                  </a> <!-- testSpliceRangeToDuration -->
+                  <span class="method-name">testSpliceRangeToDuration</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSpliceRange_timesOutOfOrder">
+                  </a> <!-- testSpliceRange_timesOutOfOrder -->
+                  <span class="method-name">testSpliceRange_timesOutOfOrder</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.theplatform.cs.comcast.ingest.script.ConfigTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetIngestSources_Dcf">
+                  </a> <!-- testGetIngestSources_Dcf -->
+                  <span class="method-name">testGetIngestSources_Dcf</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.theplatform.cs.comcast.ingest.CsvMetadataMapperTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testBuildAssetRecords_NoDefinedMediaHelper">
+                  </a> <!-- testBuildAssetRecords_NoDefinedMediaHelper -->
+                  <span class="method-name">testBuildAssetRecords_NoDefinedMediaHelper</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testBuildAssetRecords_NoRecords">
+                  </a> <!-- testBuildAssetRecords_NoRecords -->
+                  <span class="method-name">testBuildAssetRecords_NoRecords</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testBuildAssetRecords_OnlyEmptyRecords">
+                  </a> <!-- testBuildAssetRecords_OnlyEmptyRecords -->
+                  <span class="method-name">testBuildAssetRecords_OnlyEmptyRecords</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testBuildAssetRecords_WithEmptyRecords">
+                  </a> <!-- testBuildAssetRecords_WithEmptyRecords -->
+                  <span class="method-name">testBuildAssetRecords_WithEmptyRecords</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testBuildAssetSpliceRecords">
+                  </a> <!-- testBuildAssetSpliceRecords -->
+                  <span class="method-name">testBuildAssetSpliceRecords</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testBuildFileAsset">
+                  </a> <!-- testBuildFileAsset -->
+                  <span class="method-name">testBuildFileAsset</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testBuildFileAsset_NoCsvDefined">
+                  </a> <!-- testBuildFileAsset_NoCsvDefined -->
+                  <span class="method-name">testBuildFileAsset_NoCsvDefined</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testComposeGuid_Cox">
+                  </a> <!-- testComposeGuid_Cox -->
+                  <span class="method-name">testComposeGuid_Cox</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testComposeGuid_NotCox">
+                  </a> <!-- testComposeGuid_NotCox -->
+                  <span class="method-name">testComposeGuid_NotCox</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testMapSpliceRecordsToIngestMedia">
+                  </a> <!-- testMapSpliceRecordsToIngestMedia -->
+                  <span class="method-name">testMapSpliceRecordsToIngestMedia</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testMapSpliceRecordsToIngestMedia_MDU">
+                  </a> <!-- testMapSpliceRecordsToIngestMedia_MDU -->
+                  <span class="method-name">testMapSpliceRecordsToIngestMedia_MDU</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testMapSpliceRecordsToIngestMedia_MDU_BreakPointsDupe">
+                  </a> <!-- testMapSpliceRecordsToIngestMedia_MDU_BreakPointsDupe -->
+                  <span class="method-name">testMapSpliceRecordsToIngestMedia_MDU_BreakPointsDupe</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testMapSpliceRecordsToIngestMedia_MDU_NullOutFields">
+                  </a> <!-- testMapSpliceRecordsToIngestMedia_MDU_NullOutFields -->
+                  <span class="method-name">testMapSpliceRecordsToIngestMedia_MDU_NullOutFields</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testMapSpliceRecordsToIngestMedia_WithWarnings">
+                  </a> <!-- testMapSpliceRecordsToIngestMedia_WithWarnings -->
+                  <span class="method-name">testMapSpliceRecordsToIngestMedia_WithWarnings</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.theplatform.cs.comcast.ingest.field.AdFieldInfoTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testFieldInfo">
+                  </a> <!-- testFieldInfo -->
+                  <span class="method-name">testFieldInfo</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testNamespace">
+                  </a> <!-- testNamespace -->
+                  <span class="method-name">testNamespace</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.theplatform.cs.comcast.ingest.field.ReferenceDataFieldInfoTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testFieldInfo">
+                  </a> <!-- testFieldInfo -->
+                  <span class="method-name">testFieldInfo</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testNamespace">
+                  </a> <!-- testNamespace -->
+                  <span class="method-name">testNamespace</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
+        </div> <!-- panel Command_line_suite -->
+        <div panel-name="test-xml-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite verbose=&quot;0&quot; name=&quot;Command line suite&quot;&gt;
+  &lt;test name=&quot;Command line test&quot; preserve-order=&quot;false&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.theplatform.cs.comcast.ingest.AssetSpliceRecordTest&quot;/&gt;
+      &lt;class name=&quot;com.theplatform.cs.comcast.ingest.CsvMetadataMapperTest&quot;/&gt;
+      &lt;class name=&quot;com.theplatform.cs.comcast.ingest.field.AdFieldInfoTest&quot;/&gt;
+      &lt;class name=&quot;com.theplatform.cs.comcast.ingest.field.BaseFieldInfoTest&quot;/&gt;
+      &lt;class name=&quot;com.theplatform.cs.comcast.ingest.field.ReferenceDataFieldInfoTest&quot;/&gt;
+      &lt;class name=&quot;com.theplatform.cs.comcast.ingest.GeneratedScriptTest&quot;/&gt;
+      &lt;class name=&quot;com.theplatform.cs.comcast.ingest.script.ComcastIngestScriptClassTest&quot;/&gt;
+      &lt;class name=&quot;com.theplatform.cs.comcast.ingest.script.ConfigTest&quot;/&gt;
+      &lt;class name=&quot;com.theplatform.cs.comcast.ingest.SpliceRangeTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Command line test --&gt;
+&lt;/suite&gt; &lt;!-- Command line suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Command line suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Command line test (9 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Command line suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Command line suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Command_line_suite');
+function tableData_Command_line_suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(53);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'formatOfTheGeneratedScriptIsValid')
+data.setCell(0, 2, 'com.theplatform.cs.comcast.ingest.GeneratedScriptTest')
+data.setCell(0, 3, 948);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'testRun')
+data.setCell(1, 2, 'com.theplatform.cs.comcast.ingest.script.ComcastIngestScriptClassTest')
+data.setCell(1, 3, 478);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'testAssetSpliceRecordCreation')
+data.setCell(2, 2, 'com.theplatform.cs.comcast.ingest.AssetSpliceRecordTest')
+data.setCell(2, 3, 197);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'testMapSpliceRecordsToIngestMedia_MDU')
+data.setCell(3, 2, 'com.theplatform.cs.comcast.ingest.CsvMetadataMapperTest')
+data.setCell(3, 3, 35);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'testFieldInfo')
+data.setCell(4, 2, 'com.theplatform.cs.comcast.ingest.field.AdFieldInfoTest')
+data.setCell(4, 3, 30);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'testMapSpliceRecordsToIngestMedia_MDU_BreakPointsDupe')
+data.setCell(5, 2, 'com.theplatform.cs.comcast.ingest.CsvMetadataMapperTest')
+data.setCell(5, 3, 28);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'testAssetSpliceRecordCreation_LocalMidRollEndIsNull')
+data.setCell(6, 2, 'com.theplatform.cs.comcast.ingest.AssetSpliceRecordTest')
+data.setCell(6, 3, 18);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'testAssetSpliceRecordCreationManualPopulation')
+data.setCell(7, 2, 'com.theplatform.cs.comcast.ingest.AssetSpliceRecordTest')
+data.setCell(7, 3, 18);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'testAssetSpliceRecordDeriveChapters')
+data.setCell(8, 2, 'com.theplatform.cs.comcast.ingest.AssetSpliceRecordTest')
+data.setCell(8, 3, 18);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'testMapSpliceRecordsToIngestMedia_MDU_NullOutFields')
+data.setCell(9, 2, 'com.theplatform.cs.comcast.ingest.CsvMetadataMapperTest')
+data.setCell(9, 3, 15);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'testAssetSpliceRecordCreation_WithNationalConditioning')
+data.setCell(10, 2, 'com.theplatform.cs.comcast.ingest.AssetSpliceRecordTest')
+data.setCell(10, 3, 14);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'testAssetSpliceRecordCreation_TimesOutOfOrder')
+data.setCell(11, 2, 'com.theplatform.cs.comcast.ingest.AssetSpliceRecordTest')
+data.setCell(11, 3, 12);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'testBuildAssetRecords_WithEmptyRecords')
+data.setCell(12, 2, 'com.theplatform.cs.comcast.ingest.CsvMetadataMapperTest')
+data.setCell(12, 3, 9);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'testAssetSpliceRecordCreation_NoHeader')
+data.setCell(13, 2, 'com.theplatform.cs.comcast.ingest.AssetSpliceRecordTest')
+data.setCell(13, 3, 8);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'testAssetSpliceRecordCreation_WithWhiteSpace')
+data.setCell(14, 2, 'com.theplatform.cs.comcast.ingest.AssetSpliceRecordTest')
+data.setCell(14, 3, 8);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'testAssetSpliceRecordCreation_withLocal')
+data.setCell(15, 2, 'com.theplatform.cs.comcast.ingest.AssetSpliceRecordTest')
+data.setCell(15, 3, 8);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'testFieldInfo')
+data.setCell(16, 2, 'com.theplatform.cs.comcast.ingest.field.BaseFieldInfoTest')
+data.setCell(16, 3, 7);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'testBuildAssetSpliceRecords')
+data.setCell(17, 2, 'com.theplatform.cs.comcast.ingest.CsvMetadataMapperTest')
+data.setCell(17, 3, 7);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'testMapSpliceRecordsToIngestMedia_WithWarnings')
+data.setCell(18, 2, 'com.theplatform.cs.comcast.ingest.CsvMetadataMapperTest')
+data.setCell(18, 3, 7);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'testAssetSpliceRecordCreation_EmptyDataRecord')
+data.setCell(19, 2, 'com.theplatform.cs.comcast.ingest.AssetSpliceRecordTest')
+data.setCell(19, 3, 7);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'testMapSpliceRecordsToIngestMedia')
+data.setCell(20, 2, 'com.theplatform.cs.comcast.ingest.CsvMetadataMapperTest')
+data.setCell(20, 3, 6);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'testAssetSpliceRecordDeriveChapters_OnlyPreRoll')
+data.setCell(21, 2, 'com.theplatform.cs.comcast.ingest.AssetSpliceRecordTest')
+data.setCell(21, 3, 6);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'testAssetSpliceRecordDeriveChapters_OnlyOneBadBoyInTheMiddle')
+data.setCell(22, 2, 'com.theplatform.cs.comcast.ingest.AssetSpliceRecordTest')
+data.setCell(22, 3, 5);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'testAssetSpliceRecord_ZeroChapter')
+data.setCell(23, 2, 'com.theplatform.cs.comcast.ingest.AssetSpliceRecordTest')
+data.setCell(23, 3, 5);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'testAssetSpliceRecordDeriveChapters_PaidHasLowerCase')
+data.setCell(24, 2, 'com.theplatform.cs.comcast.ingest.AssetSpliceRecordTest')
+data.setCell(24, 3, 5);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'testAssetSpliceRecordCreation_MissingRecords')
+data.setCell(25, 2, 'com.theplatform.cs.comcast.ingest.AssetSpliceRecordTest')
+data.setCell(25, 3, 5);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'testAssetSpliceRecordDeriveChapters_NoMidRolls')
+data.setCell(26, 2, 'com.theplatform.cs.comcast.ingest.AssetSpliceRecordTest')
+data.setCell(26, 3, 4);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'testAssetSpliceRecordDeriveChapters_OnlyLeadBlack')
+data.setCell(27, 2, 'com.theplatform.cs.comcast.ingest.AssetSpliceRecordTest')
+data.setCell(27, 3, 4);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'testBuildAssetRecords_NoDefinedMediaHelper')
+data.setCell(28, 2, 'com.theplatform.cs.comcast.ingest.CsvMetadataMapperTest')
+data.setCell(28, 3, 3);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'testGetIngestSources_Dcf')
+data.setCell(29, 2, 'com.theplatform.cs.comcast.ingest.script.ConfigTest')
+data.setCell(29, 3, 2);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'testBuildFileAsset')
+data.setCell(30, 2, 'com.theplatform.cs.comcast.ingest.CsvMetadataMapperTest')
+data.setCell(30, 3, 2);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'testAssetSpliceRecordCreation_SpliceRangesNullCompoundString')
+data.setCell(31, 2, 'com.theplatform.cs.comcast.ingest.AssetSpliceRecordTest')
+data.setCell(31, 3, 2);
+data.setCell(32, 0, 32)
+data.setCell(32, 1, 'testFieldInfo')
+data.setCell(32, 2, 'com.theplatform.cs.comcast.ingest.field.ReferenceDataFieldInfoTest')
+data.setCell(32, 3, 2);
+data.setCell(33, 0, 33)
+data.setCell(33, 1, 'testBuildAssetRecords_OnlyEmptyRecords')
+data.setCell(33, 2, 'com.theplatform.cs.comcast.ingest.CsvMetadataMapperTest')
+data.setCell(33, 3, 1);
+data.setCell(34, 0, 34)
+data.setCell(34, 1, 'testComposeGuid_NotCox')
+data.setCell(34, 2, 'com.theplatform.cs.comcast.ingest.CsvMetadataMapperTest')
+data.setCell(34, 3, 1);
+data.setCell(35, 0, 35)
+data.setCell(35, 1, 'testAssetSpliceRecord_SpliceRangesCreationWithSpecifiedDelimiter')
+data.setCell(35, 2, 'com.theplatform.cs.comcast.ingest.AssetSpliceRecordTest')
+data.setCell(35, 3, 1);
+data.setCell(36, 0, 36)
+data.setCell(36, 1, 'testAssetSpliceRecordCreation_csvNullHeaderArgument')
+data.setCell(36, 2, 'com.theplatform.cs.comcast.ingest.AssetSpliceRecordTest')
+data.setCell(36, 3, 1);
+data.setCell(37, 0, 37)
+data.setCell(37, 1, 'testSpliceRangeCreation')
+data.setCell(37, 2, 'com.theplatform.cs.comcast.ingest.SpliceRangeTest')
+data.setCell(37, 3, 1);
+data.setCell(38, 0, 38)
+data.setCell(38, 1, 'testNamespace')
+data.setCell(38, 2, 'com.theplatform.cs.comcast.ingest.field.AdFieldInfoTest')
+data.setCell(38, 3, 1);
+data.setCell(39, 0, 39)
+data.setCell(39, 1, 'testSpliceRangeCreation_WithGreaterThanMillisecondAccuracy')
+data.setCell(39, 2, 'com.theplatform.cs.comcast.ingest.SpliceRangeTest')
+data.setCell(39, 3, 1);
+data.setCell(40, 0, 40)
+data.setCell(40, 1, 'testSpliceRange_timesOutOfOrder')
+data.setCell(40, 2, 'com.theplatform.cs.comcast.ingest.SpliceRangeTest')
+data.setCell(40, 3, 1);
+data.setCell(41, 0, 41)
+data.setCell(41, 1, 'testSpliceRangeCreation_WithWhiteSpace')
+data.setCell(41, 2, 'com.theplatform.cs.comcast.ingest.SpliceRangeTest')
+data.setCell(41, 3, 1);
+data.setCell(42, 0, 42)
+data.setCell(42, 1, 'testSpliceRangeFormatValidation')
+data.setCell(42, 2, 'com.theplatform.cs.comcast.ingest.SpliceRangeTest')
+data.setCell(42, 3, 1);
+data.setCell(43, 0, 43)
+data.setCell(43, 1, 'testBuildFileAsset_NoCsvDefined')
+data.setCell(43, 2, 'com.theplatform.cs.comcast.ingest.CsvMetadataMapperTest')
+data.setCell(43, 3, 0);
+data.setCell(44, 0, 44)
+data.setCell(44, 1, 'testAssetSpliceRecord_SpliceRangesCreationWithDefaultDelimiter')
+data.setCell(44, 2, 'com.theplatform.cs.comcast.ingest.AssetSpliceRecordTest')
+data.setCell(44, 3, 0);
+data.setCell(45, 0, 45)
+data.setCell(45, 1, 'testAssetSpliceRecordCreation_SpliceRangesNullDelimiter')
+data.setCell(45, 2, 'com.theplatform.cs.comcast.ingest.AssetSpliceRecordTest')
+data.setCell(45, 3, 0);
+data.setCell(46, 0, 46)
+data.setCell(46, 1, 'testSpliceRangeToDuration')
+data.setCell(46, 2, 'com.theplatform.cs.comcast.ingest.SpliceRangeTest')
+data.setCell(46, 3, 0);
+data.setCell(47, 0, 47)
+data.setCell(47, 1, 'testBuildAssetRecords_NoRecords')
+data.setCell(47, 2, 'com.theplatform.cs.comcast.ingest.CsvMetadataMapperTest')
+data.setCell(47, 3, 0);
+data.setCell(48, 0, 48)
+data.setCell(48, 1, 'testComposeGuid_Cox')
+data.setCell(48, 2, 'com.theplatform.cs.comcast.ingest.CsvMetadataMapperTest')
+data.setCell(48, 3, 0);
+data.setCell(49, 0, 49)
+data.setCell(49, 1, 'testAssetSpliceRecordCreation_csvNullItemArgument')
+data.setCell(49, 2, 'com.theplatform.cs.comcast.ingest.AssetSpliceRecordTest')
+data.setCell(49, 3, 0);
+data.setCell(50, 0, 50)
+data.setCell(50, 1, 'testSpliceRangeCreation_VeryLargeValue')
+data.setCell(50, 2, 'com.theplatform.cs.comcast.ingest.SpliceRangeTest')
+data.setCell(50, 3, 0);
+data.setCell(51, 0, 51)
+data.setCell(51, 1, 'testNamespace')
+data.setCell(51, 2, 'com.theplatform.cs.comcast.ingest.field.BaseFieldInfoTest')
+data.setCell(51, 3, 0);
+data.setCell(52, 0, 52)
+data.setCell(52, 1, 'testNamespace')
+data.setCell(52, 2, 'com.theplatform.cs.comcast.ingest.field.ReferenceDataFieldInfoTest')
+data.setCell(52, 3, 0);
+window.suiteTableData['Command_line_suite']= { tableData: data, tableDiv: 'times-div-Command_line_suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 seconds</span>
+              <div id="times-div-Command_line_suite">
+              </div> <!-- times-div-Command_line_suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Command line suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.theplatform.cs.comcast.ingest.field.AdFieldInfoTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testFieldInfo</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testNamespace</span>
+                <span class="method-start">30 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.theplatform.cs.comcast.ingest.AssetSpliceRecordTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testAssetSpliceRecordCreation</span>
+                <span class="method-start">32 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testAssetSpliceRecordCreationManualPopulation</span>
+                <span class="method-start">229 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testAssetSpliceRecordCreation_EmptyDataRecord</span>
+                <span class="method-start">248 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testAssetSpliceRecordCreation_LocalMidRollEndIsNull</span>
+                <span class="method-start">255 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testAssetSpliceRecordCreation_MissingRecords</span>
+                <span class="method-start">274 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testAssetSpliceRecordCreation_NoHeader</span>
+                <span class="method-start">279 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testAssetSpliceRecordCreation_SpliceRangesNullCompoundString</span>
+                <span class="method-start">287 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testAssetSpliceRecordCreation_SpliceRangesNullDelimiter</span>
+                <span class="method-start">289 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testAssetSpliceRecordCreation_TimesOutOfOrder</span>
+                <span class="method-start">289 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testAssetSpliceRecordCreation_WithNationalConditioning</span>
+                <span class="method-start">301 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testAssetSpliceRecordCreation_WithWhiteSpace</span>
+                <span class="method-start">315 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testAssetSpliceRecordCreation_csvNullHeaderArgument</span>
+                <span class="method-start">323 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testAssetSpliceRecordCreation_csvNullItemArgument</span>
+                <span class="method-start">324 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testAssetSpliceRecordCreation_withLocal</span>
+                <span class="method-start">324 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testAssetSpliceRecordDeriveChapters</span>
+                <span class="method-start">332 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testAssetSpliceRecordDeriveChapters_NoMidRolls</span>
+                <span class="method-start">351 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testAssetSpliceRecordDeriveChapters_OnlyLeadBlack</span>
+                <span class="method-start">355 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testAssetSpliceRecordDeriveChapters_OnlyOneBadBoyInTheMiddle</span>
+                <span class="method-start">359 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testAssetSpliceRecordDeriveChapters_OnlyPreRoll</span>
+                <span class="method-start">365 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testAssetSpliceRecordDeriveChapters_PaidHasLowerCase</span>
+                <span class="method-start">371 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testAssetSpliceRecord_SpliceRangesCreationWithDefaultDelimiter</span>
+                <span class="method-start">376 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testAssetSpliceRecord_SpliceRangesCreationWithSpecifiedDelimiter</span>
+                <span class="method-start">376 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testAssetSpliceRecord_ZeroChapter</span>
+                <span class="method-start">377 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.theplatform.cs.comcast.ingest.field.BaseFieldInfoTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testFieldInfo</span>
+                <span class="method-start">382 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testNamespace</span>
+                <span class="method-start">389 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.theplatform.cs.comcast.ingest.script.ComcastIngestScriptClassTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testRun</span>
+                <span class="method-start">389 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.theplatform.cs.comcast.ingest.script.ConfigTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testGetIngestSources_Dcf</span>
+                <span class="method-start">868 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.theplatform.cs.comcast.ingest.CsvMetadataMapperTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testBuildAssetRecords_NoDefinedMediaHelper</span>
+                <span class="method-start">871 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testBuildAssetRecords_NoRecords</span>
+                <span class="method-start">875 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testBuildAssetRecords_OnlyEmptyRecords</span>
+                <span class="method-start">876 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testBuildAssetRecords_WithEmptyRecords</span>
+                <span class="method-start">877 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testBuildAssetSpliceRecords</span>
+                <span class="method-start">886 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testBuildFileAsset</span>
+                <span class="method-start">893 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testBuildFileAsset_NoCsvDefined</span>
+                <span class="method-start">895 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testComposeGuid_Cox</span>
+                <span class="method-start">895 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testComposeGuid_NotCox</span>
+                <span class="method-start">895 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testMapSpliceRecordsToIngestMedia</span>
+                <span class="method-start">896 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testMapSpliceRecordsToIngestMedia_MDU</span>
+                <span class="method-start">902 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testMapSpliceRecordsToIngestMedia_MDU_BreakPointsDupe</span>
+                <span class="method-start">937 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testMapSpliceRecordsToIngestMedia_MDU_NullOutFields</span>
+                <span class="method-start">965 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testMapSpliceRecordsToIngestMedia_WithWarnings</span>
+                <span class="method-start">980 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.theplatform.cs.comcast.ingest.GeneratedScriptTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">formatOfTheGeneratedScriptIsValid</span>
+                <span class="method-start">987 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.theplatform.cs.comcast.ingest.field.ReferenceDataFieldInfoTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testFieldInfo</span>
+                <span class="method-start">1935 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testNamespace</span>
+                <span class="method-start">1937 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.theplatform.cs.comcast.ingest.SpliceRangeTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testSpliceRangeCreation</span>
+                <span class="method-start">1938 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testSpliceRangeCreation_VeryLargeValue</span>
+                <span class="method-start">1939 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testSpliceRangeCreation_WithGreaterThanMillisecondAccuracy</span>
+                <span class="method-start">1939 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testSpliceRangeCreation_WithWhiteSpace</span>
+                <span class="method-start">1940 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testSpliceRangeFormatValidation</span>
+                <span class="method-start">1941 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testSpliceRangeToDuration</span>
+                <span class="method-start">1942 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testSpliceRange_timesOutOfOrder</span>
+                <span class="method-start">1942 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

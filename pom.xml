@@ -1,0 +1,259 @@
+
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+                      http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.theplatform</groupId>
+        <artifactId>theplatform</artifactId>
+        <version>4.2.2</version>
+        <relativePath/>
+    </parent>
+
+    <groupId>com.travis.comcast.sample</groupId>
+    <artifactId>nishita-travis-sample-app</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
+
+    <name>${project.artifactId} [${project.basedir}]</name>
+
+    <properties>
+        <maven.build.timestamp.format>yyyy-MM-dd HH:mm:ss</maven.build.timestamp.format>
+        <groovy.version>1.8.0</groovy.version>
+        <gmaven.version>1.5</gmaven.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.codehaus.groovy</groupId>
+            <artifactId>groovy-all</artifactId>
+            <version>${groovy.version}</version>
+        </dependency>
+
+
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>1.7.21</version>
+        </dependency>
+
+        <!--
+            Test dependencies
+        -->
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>6.8.7</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-all</artifactId>
+            <version>1.9.5</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+    <profiles>
+        <profile>
+            <id>property-profile</id>
+            <activation>
+                <property>
+                    <name>!env.PULSE_BUILD_REVISION</name>
+                </property>
+            </activation>
+            <properties>
+                <env.PULSE_BUILD_REVISION>Not an automated build.</env.PULSE_BUILD_REVISION>
+                <env.PULSE_BUILD_TIMESTAMP>${maven.build.timestamp}</env.PULSE_BUILD_TIMESTAMP>
+                <env.PULSE_BUILD_REASON>Local</env.PULSE_BUILD_REASON>
+            </properties>
+        </profile>
+    </profiles>
+    <build>
+        <defaultGoal>package</defaultGoal>
+        <plugins>
+            <!-- groovy/java compilation plugin -->
+            <plugin>
+                <groupId>org.codehaus.gmaven</groupId>
+                <artifactId>gmaven-plugin</artifactId>
+                <version>${gmaven.version}</version>
+                <dependencies>
+                    <dependency>
+                        <groupId>org.codehaus.gmaven.runtime</groupId>
+                        <artifactId>gmaven-runtime-2.0</artifactId>
+                        <version>${gmaven.version}</version>
+                        <exclusions>
+                            <exclusion>
+                                <groupId>org.codehaus.groovy</groupId>
+                                <artifactId>groovy-all</artifactId>
+                            </exclusion>
+                        </exclusions>
+                    </dependency>
+                    <dependency>
+                        <groupId>org.codehaus.groovy</groupId>
+                        <artifactId>groovy-all</artifactId>
+                        <version>${groovy.version}</version>
+                    </dependency>
+                </dependencies>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>compile</goal>
+                            <goal>testCompile</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>build-helper-maven-plugin</artifactId>
+                <version>1.3</version>
+                <executions>
+                    <execution>
+                        <id>add-source</id>
+                        <phase>generate-sources</phase>
+                        <goals>
+                            <goal>add-source</goal>
+                        </goals>
+                        <configuration>
+                            <sources>
+                                <!-- adjust this path as needed -->
+                                <source>src/main/groovy</source>
+                            </sources>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-antrun-plugin</artifactId>
+                <version>1.7</version>
+                <executions>
+                    <execution>
+                        <phase>process-classes</phase>
+                        <configuration>
+                            <target>
+                                <!-- If destfile is changed, the filename is GeneratedScriptTest must be changed too -->
+                                <concat destfile="${project.build.directory}/${project.artifactId}-generated-noimports.groovy"
+                                        outputencoding="UTF-8">
+                                    <filelist
+                                            dir="${project.basedir}/src/main/groovy/com/theplatform/cs/comcast/ingest/script"
+                                            files="ComcastScriptEntryPoint.groovy" />
+
+                                    <fileset dir="${project.basedir}/src/main/groovy/com/theplatform/cs/comcast/ingest"
+                                             includes="**/*.groovy"
+                                             excludes="**/script/ComcastScriptEntryPoint.groovy" />
+
+                                    <filterchain>
+                                        <!-- remove package statements -->
+                                        <linecontainsregexp negate="true">
+                                            <regexp pattern="package.*" />
+                                        </linecontainsregexp>
+
+                                        <!-- remove import statements -->
+                                        <linecontainsregexp negate="true">
+                                            <regexp pattern="import.*" />
+                                        </linecontainsregexp>
+
+                                    </filterchain>
+                                </concat>
+
+                                <concat destfile="${project.build.directory}/${project.artifactId}-generated-imports.groovy"
+                                        outputencoding="UTF-8">
+                                    <filelist
+                                            dir="${project.basedir}/src/main/groovy/com/theplatform/cs/comcast/ingest/script"
+                                            files="ComcastScriptEntryPoint.groovy" />
+
+                                    <fileset dir="${project.basedir}/src/main/groovy/com/theplatform/cs/comcast/ingest"
+                                             includes="**/*.groovy"
+                                             excludes="**/script/ComcastScriptEntryPoint.groovy" />
+
+                                    <filterchain>
+                                        <tokenfilter delimoutput="\n">
+                                            <containsregex pattern="^\s*import.*"/>
+                                            <!--<stringtokenizer/>-->
+                                        </tokenfilter>
+
+                                        <linecontains negate="true">
+                                            <contains
+                                                    value="import com.theplatform.cs.comcast.ingest.script.ComcastIngestScriptClass" />
+                                        </linecontains>
+
+                                        <!-- remove import statements -->
+                                        <linecontainsregexp negate="true">
+                                            <regexp pattern="import.*com.theplatform.cs.comcast.ingest.*"/>
+                                        </linecontainsregexp>
+
+                                        <sortfilter/>
+                                        <uniqfilter/>
+                                    </filterchain>
+                                </concat>
+
+
+                                <concat destfile="${project.build.directory}/${project.artifactId}-generated.groovy"
+                                        outputencoding="UTF-8" fixlastline="true">
+
+                                    <!-- The entry point must be first in the generated file. -->
+                                    <filelist
+                                            dir="${project.build.directory}"
+                                            files="${project.artifactId}-generated-imports.groovy,${project.artifactId}-generated-noimports.groovy" />
+
+                                    <header trimleading="yes">
+                                        <!--package comcast.csv.generated-->
+
+                                        __COMMENT__ =====================================================================
+                                        __COMMENT__ start script: ${project.artifactId}
+                                        __COMMENT__ =====================================================================
+
+                                        __COMMENT__ Build Revision = ${env.PULSE_BUILD_REVISION}
+                                        __COMMENT__ Version = ${project.version}
+                                        __COMMENT__ Build Date = ${env.PULSE_BUILD_TIMESTAMP}
+                                        __COMMENT__ Build Type = ${env.PULSE_BUILD_REASON}
+                                        __COMMENT__ User = ${user.name}
+
+                                    </header>
+                                    <footer trimleading="yes">
+                                        __COMMENT__ =====================================================================
+                                        __COMMENT__ end script: ${project.artifactId}
+                                        __COMMENT__ =====================================================================
+                                    </footer>
+                                    <filterchain>
+
+                                        <tokenfilter>
+                                            <filetokenizer />
+                                            <replaceregex
+                                                    pattern="\s*//.*|(&quot;(?:\\[^&quot;]|&quot;|.)*?&quot;|'(?:\\[^']|'|.)*?')|(?s)/\*.*?\*/"
+                                                    replace="\1" flags="gm" />
+                                        </tokenfilter>
+
+                                        <!-- uncomment if you would like to strip blank lines  -->
+
+                                        <!-- add back the header/footer as comments-->
+                                        <tokenfilter>
+                                            <replacestring from="__COMMENT__" to="//" />
+                                            <replacestring from="__FILE_INFO__" to="$File$" />
+                                        </tokenfilter>
+
+                                    </filterchain>
+                                </concat>
+
+                                <chmod file="${project.basedir}/generated/${project.artifactId}-generated.groovy" perm="666"/>
+
+                                <copy file="${project.build.directory}/${project.artifactId}-generated.groovy"
+                                      tofile="${project.basedir}/generated/${project.artifactId}-generated.groovy"/>
+                            </target>
+                        </configuration>
+                        <goals>
+                            <goal>run</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+</project>
