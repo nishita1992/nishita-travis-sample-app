@@ -5,12 +5,12 @@
                       http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <parent>
-        <groupId>com.theplatform</groupId>
-        <artifactId>theplatform</artifactId>
-        <version>4.2.2</version>
-        <relativePath/>
-    </parent>
+    <!--<parent>-->
+        <!--<groupId>com.theplatform</groupId>-->
+        <!--<artifactId>theplatform</artifactId>-->
+        <!--<version>4.2.2</version>-->
+        <!--<relativePath/>-->
+    <!--</parent>-->
 
     <groupId>com.travis.comcast.sample</groupId>
     <artifactId>nishita-travis-sample-app</artifactId>
@@ -141,13 +141,13 @@
                                 <!-- If destfile is changed, the filename is GeneratedScriptTest must be changed too -->
                                 <concat destfile="${project.build.directory}/${project.artifactId}-generated-noimports.groovy"
                                         outputencoding="UTF-8">
-                                    <filelist
-                                            dir="${project.basedir}/src/main/groovy/com/theplatform/cs/comcast/ingest/script"
-                                            files="ComcastScriptEntryPoint.groovy" />
+                                    <!--<filelist-->
+                                            <!--dir="${project.basedir}/src/main/groovy/com/theplatform/cs/comcast/ingest/script"-->
+                                            <!--files="ComcastScriptEntryPoint.groovy" />-->
 
-                                    <fileset dir="${project.basedir}/src/main/groovy/com/theplatform/cs/comcast/ingest"
-                                             includes="**/*.groovy"
-                                             excludes="**/script/ComcastScriptEntryPoint.groovy" />
+                                    <!--<fileset dir="${project.basedir}/src/main/groovy/com/theplatform/cs/comcast/ingest"-->
+                                             <!--includes="**/*.groovy"-->
+                                             <!--excludes="**/script/ComcastScriptEntryPoint.groovy" />-->
 
                                     <filterchain>
                                         <!-- remove package statements -->
@@ -165,13 +165,13 @@
 
                                 <concat destfile="${project.build.directory}/${project.artifactId}-generated-imports.groovy"
                                         outputencoding="UTF-8">
-                                    <filelist
-                                            dir="${project.basedir}/src/main/groovy/com/theplatform/cs/comcast/ingest/script"
-                                            files="ComcastScriptEntryPoint.groovy" />
+                                    <!--<filelist-->
+                                            <!--dir="${project.basedir}/src/main/groovy/com/theplatform/cs/comcast/ingest/script"-->
+                                            <!--files="ComcastScriptEntryPoint.groovy" />-->
 
-                                    <fileset dir="${project.basedir}/src/main/groovy/com/theplatform/cs/comcast/ingest"
-                                             includes="**/*.groovy"
-                                             excludes="**/script/ComcastScriptEntryPoint.groovy" />
+                                    <!--<fileset dir="${project.basedir}/src/main/groovy/com/theplatform/cs/comcast/ingest"-->
+                                             <!--includes="**/*.groovy"-->
+                                             <!--excludes="**/script/ComcastScriptEntryPoint.groovy" />-->
 
                                     <filterchain>
                                         <tokenfilter delimoutput="\n">
@@ -179,15 +179,15 @@
                                             <!--<stringtokenizer/>-->
                                         </tokenfilter>
 
-                                        <linecontains negate="true">
-                                            <contains
-                                                    value="import com.theplatform.cs.comcast.ingest.script.ComcastIngestScriptClass" />
-                                        </linecontains>
+                                        <!--<linecontains negate="true">-->
+                                            <!--<contains-->
+                                                    <!--value="import com.theplatform.cs.comcast.ingest.script.ComcastIngestScriptClass" />-->
+                                        <!--</linecontains>-->
 
-                                        <!-- remove import statements -->
-                                        <linecontainsregexp negate="true">
-                                            <regexp pattern="import.*com.theplatform.cs.comcast.ingest.*"/>
-                                        </linecontainsregexp>
+                                        <!--&lt;!&ndash; remove import statements &ndash;&gt;-->
+                                        <!--<linecontainsregexp negate="true">-->
+                                            <!--<regexp pattern="import.*com.theplatform.cs.comcast.ingest.*"/>-->
+                                        <!--</linecontainsregexp>-->
 
                                         <sortfilter/>
                                         <uniqfilter/>
