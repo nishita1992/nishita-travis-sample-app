@@ -141,13 +141,13 @@
                                 <!-- If destfile is changed, the filename is GeneratedScriptTest must be changed too -->
                                 <concat destfile="${project.build.directory}/${project.artifactId}-generated-noimports.groovy"
                                         outputencoding="UTF-8">
-                                    <!--<filelist-->
-                                            <!--dir="${project.basedir}/src/main/groovy/com/theplatform/cs/comcast/ingest/script"-->
-                                            <!--files="ComcastScriptEntryPoint.groovy" />-->
+                                    <filelist
+                                            dir="${project.basedir}/src/main/groovy/com/travis/comcast/sample"
+                                            files="main.groovy" />
 
-                                    <!--<fileset dir="${project.basedir}/src/main/groovy/com/theplatform/cs/comcast/ingest"-->
-                                             <!--includes="**/*.groovy"-->
-                                             <!--excludes="**/script/ComcastScriptEntryPoint.groovy" />-->
+                                    <fileset dir="${project.basedir}/src/main/groovy/com/travis/comcast/sample"
+                                             includes="**/*.groovy"
+                                             excludes="**/main.groovy" />
 
                                     <filterchain>
                                         <!-- remove package statements -->
@@ -165,13 +165,13 @@
 
                                 <concat destfile="${project.build.directory}/${project.artifactId}-generated-imports.groovy"
                                         outputencoding="UTF-8">
-                                    <!--<filelist-->
-                                            <!--dir="${project.basedir}/src/main/groovy/com/theplatform/cs/comcast/ingest/script"-->
-                                            <!--files="ComcastScriptEntryPoint.groovy" />-->
+                                    <filelist
+                                            dir="${project.basedir}/src/main/groovy/com/travis/comcast/sample"
+                                            files="main.groovy" />
 
-                                    <!--<fileset dir="${project.basedir}/src/main/groovy/com/theplatform/cs/comcast/ingest"-->
-                                             <!--includes="**/*.groovy"-->
-                                             <!--excludes="**/script/ComcastScriptEntryPoint.groovy" />-->
+                                    <fileset dir="${project.basedir}/src/main/groovy/com/theplatform/cs/comcast/ingest"
+                                             includes="**/*.groovy"
+                                             excludes="**/main.groovy" />
 
                                     <filterchain>
                                         <tokenfilter delimoutput="\n">
