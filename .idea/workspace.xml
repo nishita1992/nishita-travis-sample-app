@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="df26dc80-ad95-4e17-a5af-ad97c0e8d428" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-    </list>
+    <list default="true" id="df26dc80-ad95-4e17-a5af-ad97c0e8d428" name="Default" comment="" />
     <ignored path="nishita-travis-sample-app.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -661,15 +659,15 @@
       <created>1490341813140</created>
       <option name="number" value="Default" />
       <updated>1490341813140</updated>
-      <workItem from="1490341814486" duration="5060000" />
+      <workItem from="1490341814486" duration="5184000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5060000" />
+    <option name="totallyTimeSpent" value="5184000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1700" y="-45" width="1440" height="877" extended-state="0" />
+    <frame x="-1700" y="-45" width="1440" height="877" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
