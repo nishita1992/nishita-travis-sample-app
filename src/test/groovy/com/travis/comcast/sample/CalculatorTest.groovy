@@ -62,5 +62,32 @@ public class CalculatorTest {
 
     }
 
+    @Test
+    public void testPositiveMultiply()
+    {
+        Calculator cl = new Calculator()
+        double sum = cl.multiply(3,5)
+        Assert.assertEquals(sum, 15.0, 0.0 )
+
+    }
+
+    @Test
+    public void testNegativeMultiply()
+    {
+        Calculator cl = new Calculator()
+        double sum = cl.multiply(-9,-7)
+        Assert.assertEquals(sum, 63.0, 0.0 )
+
+    }
+
+    @Test
+    public void testPositiveNegativeMultiplyt()
+    {
+        Calculator cl = new Calculator()
+        double sum = cl.multiply(-9,7)
+        Assert.assertEquals(sum, -63.0, 0.0 )
+
+    }
+
 
 }
