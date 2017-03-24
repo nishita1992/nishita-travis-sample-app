@@ -1,4 +1,4 @@
 language: groovy
 
 script:
-- src/main/groovy/com/travis/comcast/sample/main.groovy
+- mvn test -f pom.xml
