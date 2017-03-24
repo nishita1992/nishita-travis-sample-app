@@ -129,131 +129,131 @@
                 </executions>
             </plugin>
 
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-antrun-plugin</artifactId>
-                <version>1.7</version>
-                <executions>
-                    <execution>
-                        <phase>process-classes</phase>
-                        <configuration>
-                            <target>
-                                <!-- If destfile is changed, the filename is GeneratedScriptTest must be changed too -->
-                                <concat destfile="${project.build.directory}/${project.artifactId}-generated-noimports.groovy"
-                                        outputencoding="UTF-8">
-                                    <filelist
-                                            dir="${project.basedir}/src/main/groovy/com/travis/comcast/sample"
-                                            files="main.groovy" />
+            <!--<plugin>-->
+                <!--<groupId>org.apache.maven.plugins</groupId>-->
+                <!--<artifactId>maven-antrun-plugin</artifactId>-->
+                <!--<version>1.7</version>-->
+                <!--<executions>-->
+                    <!--<execution>-->
+                        <!--<phase>process-classes</phase>-->
+                        <!--<configuration>-->
+                            <!--<target>-->
+                                <!--&lt;!&ndash; If destfile is changed, the filename is GeneratedScriptTest must be changed too &ndash;&gt;-->
+                                <!--<concat destfile="${project.build.directory}/${project.artifactId}-generated-noimports.groovy"-->
+                                        <!--outputencoding="UTF-8">-->
+                                    <!--<filelist-->
+                                            <!--dir="${project.basedir}/src/main/groovy/com/travis/comcast/sample"-->
+                                            <!--files="main.groovy" />-->
 
-                                    <fileset dir="${project.basedir}/src/main/groovy/com/travis/comcast/sample"
-                                             includes="**/*.groovy"
-                                             excludes="**/main.groovy" />
+                                    <!--<fileset dir="${project.basedir}/src/main/groovy/com/travis/comcast/sample"-->
+                                             <!--includes="**/*.groovy"-->
+                                             <!--excludes="**/main.groovy" />-->
 
-                                    <filterchain>
-                                        <!-- remove package statements -->
-                                        <linecontainsregexp negate="true">
-                                            <regexp pattern="package.*" />
-                                        </linecontainsregexp>
-
-                                        <!-- remove import statements -->
-                                        <linecontainsregexp negate="true">
-                                            <regexp pattern="import.*" />
-                                        </linecontainsregexp>
-
-                                    </filterchain>
-                                </concat>
-
-                                <concat destfile="${project.build.directory}/${project.artifactId}-generated-imports.groovy"
-                                        outputencoding="UTF-8">
-                                    <filelist
-                                            dir="${project.basedir}/src/main/groovy/com/travis/comcast/sample"
-                                            files="main.groovy" />
-
-                                    <fileset dir="${project.basedir}/src/main/groovy/com/theplatform/cs/comcast/ingest"
-                                             includes="**/*.groovy"
-                                             excludes="**/main.groovy" />
-
-                                    <filterchain>
-                                        <tokenfilter delimoutput="\n">
-                                            <containsregex pattern="^\s*import.*"/>
-                                            <!--<stringtokenizer/>-->
-                                        </tokenfilter>
-
-                                        <!--<linecontains negate="true">-->
-                                            <!--<contains-->
-                                                    <!--value="import com.theplatform.cs.comcast.ingest.script.ComcastIngestScriptClass" />-->
-                                        <!--</linecontains>-->
+                                    <!--<filterchain>-->
+                                        <!--&lt;!&ndash; remove package statements &ndash;&gt;-->
+                                        <!--<linecontainsregexp negate="true">-->
+                                            <!--<regexp pattern="package.*" />-->
+                                        <!--</linecontainsregexp>-->
 
                                         <!--&lt;!&ndash; remove import statements &ndash;&gt;-->
                                         <!--<linecontainsregexp negate="true">-->
-                                            <!--<regexp pattern="import.*com.theplatform.cs.comcast.ingest.*"/>-->
+                                            <!--<regexp pattern="import.*" />-->
                                         <!--</linecontainsregexp>-->
 
-                                        <sortfilter/>
-                                        <uniqfilter/>
-                                    </filterchain>
-                                </concat>
+                                    <!--</filterchain>-->
+                                <!--</concat>-->
+
+                                <!--<concat destfile="${project.build.directory}/${project.artifactId}-generated-imports.groovy"-->
+                                        <!--outputencoding="UTF-8">-->
+                                    <!--<filelist-->
+                                            <!--dir="${project.basedir}/src/main/groovy/com/travis/comcast/sample"-->
+                                            <!--files="main.groovy" />-->
+
+                                    <!--<fileset dir="${project.basedir}/src/main/groovy/com/theplatform/cs/comcast/ingest"-->
+                                             <!--includes="**/*.groovy"-->
+                                             <!--excludes="**/main.groovy" />-->
+
+                                    <!--<filterchain>-->
+                                        <!--<tokenfilter delimoutput="\n">-->
+                                            <!--<containsregex pattern="^\s*import.*"/>-->
+                                            <!--&lt;!&ndash;<stringtokenizer/>&ndash;&gt;-->
+                                        <!--</tokenfilter>-->
+
+                                        <!--&lt;!&ndash;<linecontains negate="true">&ndash;&gt;-->
+                                            <!--&lt;!&ndash;<contains&ndash;&gt;-->
+                                                    <!--&lt;!&ndash;value="import com.theplatform.cs.comcast.ingest.script.ComcastIngestScriptClass" />&ndash;&gt;-->
+                                        <!--&lt;!&ndash;</linecontains>&ndash;&gt;-->
+
+                                        <!--&lt;!&ndash;&lt;!&ndash; remove import statements &ndash;&gt;&ndash;&gt;-->
+                                        <!--&lt;!&ndash;<linecontainsregexp negate="true">&ndash;&gt;-->
+                                            <!--&lt;!&ndash;<regexp pattern="import.*com.theplatform.cs.comcast.ingest.*"/>&ndash;&gt;-->
+                                        <!--&lt;!&ndash;</linecontainsregexp>&ndash;&gt;-->
+
+                                        <!--<sortfilter/>-->
+                                        <!--<uniqfilter/>-->
+                                    <!--</filterchain>-->
+                                <!--</concat>-->
 
 
-                                <concat destfile="${project.build.directory}/${project.artifactId}-generated.groovy"
-                                        outputencoding="UTF-8" fixlastline="true">
+                                <!--<concat destfile="${project.build.directory}/${project.artifactId}-generated.groovy"-->
+                                        <!--outputencoding="UTF-8" fixlastline="true">-->
 
-                                    <!-- The entry point must be first in the generated file. -->
-                                    <filelist
-                                            dir="${project.build.directory}"
-                                            files="${project.artifactId}-generated-imports.groovy,${project.artifactId}-generated-noimports.groovy" />
+                                    <!--&lt;!&ndash; The entry point must be first in the generated file. &ndash;&gt;-->
+                                    <!--<filelist-->
+                                            <!--dir="${project.build.directory}"-->
+                                            <!--files="${project.artifactId}-generated-imports.groovy,${project.artifactId}-generated-noimports.groovy" />-->
 
-                                    <header trimleading="yes">
-                                        <!--package comcast.csv.generated-->
+                                    <!--<header trimleading="yes">-->
+                                        <!--&lt;!&ndash;package comcast.csv.generated&ndash;&gt;-->
 
-                                        __COMMENT__ =====================================================================
-                                        __COMMENT__ start script: ${project.artifactId}
-                                        __COMMENT__ =====================================================================
+                                        <!--__COMMENT__ =====================================================================-->
+                                        <!--__COMMENT__ start script: ${project.artifactId}-->
+                                        <!--__COMMENT__ =====================================================================-->
 
-                                        __COMMENT__ Build Revision = ${env.PULSE_BUILD_REVISION}
-                                        __COMMENT__ Version = ${project.version}
-                                        __COMMENT__ Build Date = ${env.PULSE_BUILD_TIMESTAMP}
-                                        __COMMENT__ Build Type = ${env.PULSE_BUILD_REASON}
-                                        __COMMENT__ User = ${user.name}
+                                        <!--__COMMENT__ Build Revision = ${env.PULSE_BUILD_REVISION}-->
+                                        <!--__COMMENT__ Version = ${project.version}-->
+                                        <!--__COMMENT__ Build Date = ${env.PULSE_BUILD_TIMESTAMP}-->
+                                        <!--__COMMENT__ Build Type = ${env.PULSE_BUILD_REASON}-->
+                                        <!--__COMMENT__ User = ${user.name}-->
 
-                                    </header>
-                                    <footer trimleading="yes">
-                                        __COMMENT__ =====================================================================
-                                        __COMMENT__ end script: ${project.artifactId}
-                                        __COMMENT__ =====================================================================
-                                    </footer>
-                                    <filterchain>
+                                    <!--</header>-->
+                                    <!--<footer trimleading="yes">-->
+                                        <!--__COMMENT__ =====================================================================-->
+                                        <!--__COMMENT__ end script: ${project.artifactId}-->
+                                        <!--__COMMENT__ =====================================================================-->
+                                    <!--</footer>-->
+                                    <!--<filterchain>-->
 
-                                        <tokenfilter>
-                                            <filetokenizer />
-                                            <replaceregex
-                                                    pattern="\s*//.*|(&quot;(?:\\[^&quot;]|&quot;|.)*?&quot;|'(?:\\[^']|'|.)*?')|(?s)/\*.*?\*/"
-                                                    replace="\1" flags="gm" />
-                                        </tokenfilter>
+                                        <!--<tokenfilter>-->
+                                            <!--<filetokenizer />-->
+                                            <!--<replaceregex-->
+                                                    <!--pattern="\s*//.*|(&quot;(?:\\[^&quot;]|&quot;|.)*?&quot;|'(?:\\[^']|'|.)*?')|(?s)/\*.*?\*/"-->
+                                                    <!--replace="\1" flags="gm" />-->
+                                        <!--</tokenfilter>-->
 
-                                        <!-- uncomment if you would like to strip blank lines  -->
+                                        <!--&lt;!&ndash; uncomment if you would like to strip blank lines  &ndash;&gt;-->
 
-                                        <!-- add back the header/footer as comments-->
-                                        <tokenfilter>
-                                            <replacestring from="__COMMENT__" to="//" />
-                                            <replacestring from="__FILE_INFO__" to="$File$" />
-                                        </tokenfilter>
+                                        <!--&lt;!&ndash; add back the header/footer as comments&ndash;&gt;-->
+                                        <!--<tokenfilter>-->
+                                            <!--<replacestring from="__COMMENT__" to="//" />-->
+                                            <!--<replacestring from="__FILE_INFO__" to="$File$" />-->
+                                        <!--</tokenfilter>-->
 
-                                    </filterchain>
-                                </concat>
+                                    <!--</filterchain>-->
+                                <!--</concat>-->
 
-                                <chmod file="${project.basedir}/generated/${project.artifactId}-generated.groovy" perm="666"/>
+                                <!--<chmod file="${project.basedir}/generated/${project.artifactId}-generated.groovy" perm="666"/>-->
 
-                                <copy file="${project.build.directory}/${project.artifactId}-generated.groovy"
-                                      tofile="${project.basedir}/generated/${project.artifactId}-generated.groovy"/>
-                            </target>
-                        </configuration>
-                        <goals>
-                            <goal>run</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
+                                <!--<copy file="${project.build.directory}/${project.artifactId}-generated.groovy"-->
+                                      <!--tofile="${project.basedir}/generated/${project.artifactId}-generated.groovy"/>-->
+                            <!--</target>-->
+                        <!--</configuration>-->
+                        <!--<goals>-->
+                            <!--<goal>run</goal>-->
+                        <!--</goals>-->
+                    <!--</execution>-->
+                <!--</executions>-->
+            <!--</plugin>-->
         </plugins>
     </build>
 </project>
