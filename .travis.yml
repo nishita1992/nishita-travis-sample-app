@@ -1,6 +1,4 @@
 language: groovy
 
 script:
-
--mvn clean verify
--/src/test/groovy
+- /src/test/groovy
