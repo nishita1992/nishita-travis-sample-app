@@ -1,4 +1,4 @@
 language: groovy
 
 script:
-- /src/test/groovy/com/travis/comcast/sample
+- src/main/groovy/com/travis/comcast/sample/main.groovy
