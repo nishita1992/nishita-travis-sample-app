@@ -25,7 +25,14 @@ public class CalculatorTest {
         Assert.assertEquals(sum, -16.0, 0.0 )
 
     }
+    @Test
+    public void testNegativeNegativeAdd()
+    {
+        Calculator cl = new Calculator()
+        double sum = cl.add(-9,-17)
+        Assert.assertEquals(sum, -26.0, 0.0 )
 
+    }
     @Test
     public void testPositiveNegativeAdd()
     {
