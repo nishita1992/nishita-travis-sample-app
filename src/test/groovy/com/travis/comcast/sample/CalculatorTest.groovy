@@ -89,5 +89,14 @@ public class CalculatorTest {
 
     }
 
+    @Test
+    public void testPositiveDivide()
+    {
+        Calculator cl = new Calculator()
+        double sum = cl.divide(6,3)
+        Assert.assertEquals(sum, 2.0, 0.0 )
+
+    }
+
 
 }
