@@ -102,8 +102,8 @@ public class CalculatorTest {
     public void testNegativeDivide()
     {
         Calculator cl = new Calculator()
-        double sum = cl.divide(-6,3)
-        Assert.assertEquals(sum, -2.0, 0.0 )
+        double sum = cl.divide(-12,3)
+        Assert.assertEquals(sum, -4.0, 0.0 )
 
     }
 
