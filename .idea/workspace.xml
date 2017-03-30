@@ -29,7 +29,7 @@
         <entry file="file://$PROJECT_DIR$/src/test/groovy/com/travis/comcast/sample/CalculatorTest.groovy">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.784044">
-              <caret line="105" column="38" selection-start-line="105" selection-start-column="38" selection-end-line="105" selection-end-column="38" />
+              <caret line="105" column="35" selection-start-line="105" selection-start-column="35" selection-end-line="105" selection-end-column="35" />
               <folding />
             </state>
           </provider>
@@ -522,12 +522,12 @@
       <updated>1490856797069</updated>
       <workItem from="1490856798610" duration="162000" />
       <workItem from="1490857016649" duration="1193000" />
-      <workItem from="1490867916067" duration="18000" />
+      <workItem from="1490867916067" duration="179000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1373000" />
+    <option name="totallyTimeSpent" value="1534000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="873" extended-state="6" />
@@ -582,7 +582,7 @@
     <entry file="file://$PROJECT_DIR$/src/test/groovy/com/travis/comcast/sample/CalculatorTest.groovy">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.784044">
-          <caret line="105" column="38" selection-start-line="105" selection-start-column="38" selection-end-line="105" selection-end-column="38" />
+          <caret line="105" column="35" selection-start-line="105" selection-start-column="35" selection-end-line="105" selection-end-column="35" />
           <folding />
         </state>
       </provider>
